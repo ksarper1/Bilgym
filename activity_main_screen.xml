@@ -59,12 +59,25 @@
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="80dp"
-        android:layout_height="67dp"
+        android:layout_width="77dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
         android:onClick="setButtonClicked"
         android:text="set"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="540dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="logOutClicked"
+        android:text="Log out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
